@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Pod request access landing page</title>
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="font-chivo bg-#121725">
+  <!-- Breakpoints: sm, lg -->
+  <!-- Background -->
+  <div class="font-chivo relative min-h-screen bg-#121725 bg-mobile bg-no-repeat bg-cover sm:bg-tablet sm:bg-auto sm:bg-right-top lg:bg-desktop lg:bg-right">
+    <!-- Overlay -->
+    <div class="bg-#121725 absolute h-full w-full z-10 bg-opacity-80 sm:bg-none sm:bg-opacity-0"></div>
+    <!-- Content -->
+    <div class="min-h-screen relative z-20 flex flex-col justify-center gap-14 px-5 py-20 sm:py-0 sm:justify-between lg:pe-0 lg:justify-center lg:ps-24 lg:pt-14">
+      <!-- Header -->
+      <header class="flex justify-center sm:justify-start sm:px-5 sm:py-14">
+        <img src="assets/desktop/logo.svg" alt="pod logo">
+      </header>
+      <!-- Main -->
+      <main class="flex flex-col gap-5 px-2 py-24 sm:bg-#121725 sm:max-w-[623px] lg:max-w-[723px]">
+        <!-- Title -->
+        <div class="uppercase text-center font-thin text-2xl sm:text-5xl sm:text-left lg:text-[52px]">
+          <h1 class="text-#54E6AF">Publish your podcasts</h1>
+          <h1 class="text-white">everywhere.</h1>
+        </div>
+        <!-- Description -->
+        <p class="text-#C2CBE5 text-center text-sm font-thin sm:max-w-[445px] sm:text-lg sm:text-left">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+        <!-- Logos and Form Wrapper -->
+        <div class="flex flex-col sm:flex-col-reverse gap-5 sm:max-w-[537px] lg:gap-14">
+          <!-- Application Logos -->
+          <div class="flex justify-center w-full gap-5 p-1 sm:justify-start">
+            <img class="min-w-0 object-scale-down" src="assets/desktop/spotify.svg" alt="spotify logo">
+            <img class="min-w-0 object-scale-down" src="assets/desktop/apple-podcast.svg" alt="apple podcasts logo">
+            <img class="min-w-0 object-scale-down" src="assets/desktop/google-podcasts.svg" alt="google podcasts logo">
+            <img class="min-w-0 object-scale-down" src="assets/desktop/pocket-casts.svg" alt="pocket-casts logo">
+          </div>
+          <!-- Form -->
+          <form id="form" class="flex flex-col text-sm font-bold gap-3">
+            <!-- Input & Button Wrapper -->
+            <div class="flex relative sm:max-w-[427px]">
+              <input id="email" class="w-full bg-#2C344B rounded-full text-white px-5 py-3 outline-none sm:py-5 sm:px-7" type="email" placeholder="Email Address">
+              <button id="submit-inside" class="bg-#54E6AF hover:bg-[#B3FFE2] rounded-full px-5 py-3 hidden sm:block sm:absolute sm:end-2 sm:top-1/2 sm:-translate-y-1/2" type="Submit">Request Access</button>
+            </div>
+            <div id="warning" class="text-red-500 h-7 text-xs px-3 sm:ps-7"></div>
+            <!-- Submit Button -->
+            <button id="submit-outside" class="bg-#54E6AF hover:bg-[#B3FFE2] rounded-full px-5 py-3 sm:hidden" type="Submit">Request Access</button>
+          </form>
+        </div>
+      </main>
+      <div class="hidden sm:block lg:flex lg:justify-end lg:-translate-y-36"> 
+        <img src="assets/desktop/bg-pattern-dots.svg" alt="pattern dots">
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
